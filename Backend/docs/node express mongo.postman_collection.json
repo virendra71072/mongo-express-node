@@ -1,0 +1,228 @@
+{
+	"info": {
+		"_postman_id": "df9347d5-d7f6-4c52-ac10-78c53d7ab1a0",
+		"name": "node express mongo",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "17421413"
+	},
+	"item": [
+		{
+			"name": "user/create",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\":\"BBBB\",\n\t\"username\":\"vir2\",\n    \"email\":\"vi2r88r1@gmail.com\",\n\t\"accountType\":\"google\",\n\t\"hashedPassword\":\"1234567\"\n}"
+				},
+				"url": {
+					"raw": "localhost:8088/api/v1/user/",
+					"host": [
+						"localhost"
+					],
+					"port": "8088",
+					"path": [
+						"api",
+						"v1",
+						"user",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "user/update",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "x-access-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NTQ5ZDhjMjIzOWNiZTAzZDBmNDE4YTgiLCJyb2xlIjoidXNlciIsImlhdCI6MTY5OTMzOTgwNiwiZXhwIjoxNjk5OTQ0NjA2fQ.TebcJ8BtNj_hzf4Iw8wqySm-Fx1HpH1XXzqtgjw4yNY",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\":\"CD dffefer\",\n\t\"username\":\"sonu72\"\n}"
+				},
+				"url": {
+					"raw": "localhost:8088/api/v1/user/:userId",
+					"host": [
+						"localhost"
+					],
+					"port": "8088",
+					"path": [
+						"api",
+						"v1",
+						"user",
+						":userId"
+					],
+					"variable": [
+						{
+							"key": "userId",
+							"value": "6549ba082033086e491068c1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get user",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "x-access-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NTQ5ZDhjMjIzOWNiZTAzZDBmNDE4YTgiLCJyb2xlIjoidXNlciIsImlhdCI6MTY5OTMzOTgwNiwiZXhwIjoxNjk5OTQ0NjA2fQ.TebcJ8BtNj_hzf4Iw8wqySm-Fx1HpH1XXzqtgjw4yNY",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:8088/api/v1/user/:userId",
+					"host": [
+						"localhost"
+					],
+					"port": "8088",
+					"path": [
+						"api",
+						"v1",
+						"user",
+						":userId"
+					],
+					"variable": [
+						{
+							"key": "userId",
+							"value": "6549bee5fc417007d0878d06"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "fetch all user",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "x-access-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NTQ5ZDhjMjIzOWNiZTAzZDBmNDE4YTgiLCJyb2xlIjoidXNlciIsImlhdCI6MTY5OTMzOTgwNiwiZXhwIjoxNjk5OTQ0NjA2fQ.TebcJ8BtNj_hzf4Iw8wqySm-Fx1HpH1XXzqtgjw4yNY",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:8088/api/v1/user/",
+					"host": [
+						"localhost"
+					],
+					"port": "8088",
+					"path": [
+						"api",
+						"v1",
+						"user",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "login",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "x-access-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NTQ5ZDhjMjIzOWNiZTAzZDBmNDE4YTgiLCJyb2xlIjoidXNlciIsImlhdCI6MTY5OTMzODQzNCwiZXhwIjoxNjk5OTQzMjM0fQ.7E_3vFpPaOQnEZ3GSkvJgAs911utpRIFP4bLGYVOrI8",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"email\":\"vi2r881@gmail.com\",\n\t\"password\":\"1234567\"\n}"
+				},
+				"url": {
+					"raw": "localhost:8088/api/v1/user/login",
+					"host": [
+						"localhost"
+					],
+					"port": "8088",
+					"path": [
+						"api",
+						"v1",
+						"user",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "monitor/ping",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8088/api/v1/monitor/ping",
+					"host": [
+						"localhost"
+					],
+					"port": "8088",
+					"path": [
+						"api",
+						"v1",
+						"monitor",
+						"ping"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
